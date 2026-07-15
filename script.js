@@ -1,4 +1,9 @@
  
+
+
+let me=document.getElementById('res1');
+let bot=document.getElementById('res2');
+
 let R=document.getElementById("rock");
 R.addEventListener('click',()=>{
     const arr=["rock","paper","scissors"];
@@ -10,4 +15,6 @@ R.addEventListener('click',()=>{
     alert('you lose!');
    }
    else{alert('you won')};
+   me.innerHTML=""
+//    can i use ${} thing
 })

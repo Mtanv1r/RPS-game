@@ -4,3 +4,30 @@
     background-color: aqua;
     box-sizing: border-box;
 }
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10vh;
+}
+/* section dg */
+section{
+    display: flex;
+}
+section .me{
+    display: flex;
+    align-items: center;
+}
+section .bot{
+    display: flex;
+    align-items: center;
+}
+section .me img{
+    height: 100px;
+    width: 100px;
+}
+section .bot img{
+    height: 100px;
+    width: 100px;
+}
