@@ -1,7 +1,13 @@
-const arr=["rock","paper","scissors"];
-//console.log(arr[0]);
-//console.log(arr.length);
-//random number generator
-const randomIndex=Math.floor(Math.random()*arr.length);
-//console.log(randomIndex);
-console.log(arr[randomIndex]);
+ 
+let R=document.getElementById("rock");
+R.addEventListener('click',()=>{
+    const arr=["rock","paper","scissors"];
+    const Comp=Math.floor(Math.random()*arr.length);
+   if(arr[Comp]=="rock"){
+    alert('draw');
+   }
+   else if(arr[Comp]=="paper"){
+    alert('you lose!');
+   }
+   else{alert('you won')};
+})
