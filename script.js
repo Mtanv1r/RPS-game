@@ -5,18 +5,20 @@ let bot=document.getElementById('res2');
 let R=document.getElementById("rock");
 let P=document.getElementById("paper");
 let S=document.getElementById("scissors");
+let result=document.getElementById('gmr');
 R.addEventListener('click',()=>{
      me.innerText='rock';
     const arr=["rock","paper","scissors"];
     let Comp=Math.floor(Math.random()*arr.length);
     bot.innerText=arr[Comp];
    if(arr[Comp]=="rock"){
-    alert('draw');
+//     alert('draw');
+    result.innerText="draw";
    }
    else if(arr[Comp]=="paper"){
-    alert('you lose!');
+    result.innerText="you lost!!!!";
    }
-   else{alert('you won')};
+   else{result.innerText="you win!!!!"};
 })
 //for paper button
 P.addEventListener('click',()=>{
@@ -27,12 +29,12 @@ P.addEventListener('click',()=>{
     //bot text updated
     bot.innerText=arr[Comp];
    if(arr[Comp]=="paper"){
-    alert('draw');
+    result.innerText="draw";
    }
    else if(arr[Comp]=="scissors"){
-    alert('you lose!');
+    result.innerText="you lost!!!!";
    }
-   else{alert('you won')};
+   else{result.innerText="you win!!!!"}; 
 })
 //for scissors button
 S.addEventListener('click',()=>{
@@ -43,11 +45,11 @@ S.addEventListener('click',()=>{
     //bot text updated
     bot.innerText=arr[Comp];
    if(arr[Comp]=="scissors"){
-    alert('draw');
+    result.innerText="draw";
    }
    else if(arr[Comp]=="rock"){
-    alert('you lose!');
+    result.innerText="you lost!!";
    }
-   else{alert('you won')};
+   else{result.innerText="you win!!"}
 })
 
