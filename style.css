@@ -9,11 +9,44 @@ body{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    gap: 10vh;
+    gap: 8vw;
+}
+
+.btn{
+    width: 45vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+.btn #rock{
+    color: chartreuse;
+    font-size: 1.3rem;
+    height: 4rem;
+    width: 5rem;
+    background-color: chocolate;
+    border-radius: 12px;
+}
+.btn #paper{
+     color: chartreuse;
+    font-size: 1.3rem;
+      height: 4rem;
+    width: 5rem;
+    background-color: chocolate;
+    border-radius: 12px;
+}
+.btn #scissors{
+     color: chartreuse;
+    font-size: 1.3rem;
+      height: 4rem;
+    width: 5rem;
+    background-color: chocolate;
+    border-radius: 12px;
 }
 /* section dg */
-section{
+.result{
     display: flex;
+    justify-content: space-evenly;
+    gap: 10vw;
+    align-items: center;
 }
 section .me{
     display: flex;
